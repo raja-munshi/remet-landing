@@ -45,9 +45,13 @@ input::placeholder{color:#8C8472}
 </div>
 <h1 data-h="" style="margin:0 0 18px;font:900 58px/0.94 Gabarito,'Archivo Black',system-ui,sans-serif;letter-spacing:-.038em;color:#EDE7DC">Verified strangers.<br>Real places.<br><span style="color:#C79BD8">Actually meet.</span></h1>
 <p style="margin:0 0 30px;max-width:290px;font:400 15px/1.6 'Hanken Grotesk',sans-serif;color:#B4AA96;text-wrap:pretty">Social discovery for people who would rather be somewhere. First city, Indore.</p>
-<form onSubmit="{{ noSubmit }}" style="display:flex;gap:9px;margin:0 0 24px">
+<form data-form="hero" onSubmit="{{ submit }}" style="margin:0 0 24px">
+<div style="display:flex;gap:9px;margin:0 0 13px">
 <div style="flex:1;min-width:0;display:flex;align-items:center;background:#1E1912;border-radius:11px;box-shadow:inset 5px 5px 12px rgba(0,0,0,.6),inset -5px -5px 12px rgba(255,255,255,.028);padding-left:15px"><span style="flex:none;font:500 14px/1 'Hanken Grotesk',sans-serif;color:#8C8472;padding-right:10px;border-right:1px solid rgba(237,231,220,.11)">+91</span><input type="tel" inputmode="numeric" autocomplete="tel-national" maxlength="11" aria-label="WhatsApp number" placeholder="98765 43210" style="flex:1;min-width:0;background:transparent;border:none;padding:15px 14px;font:400 14px 'Hanken Grotesk',sans-serif;color:#EDE7DC;outline:none"></div>
 <button type="submit" style="flex:none;background:linear-gradient(145deg,#C79BD8,#8E5FA8);border:none;border-radius:11px;box-shadow:-5px -5px 12px rgba(255,255,255,.03),6px 6px 15px rgba(0,0,0,.55);padding:15px 19px;font:700 13px 'Hanken Grotesk',sans-serif;letter-spacing:.02em;color:#fff;cursor:pointer">Join</button>
+</div>
+<label style="display:flex;gap:9px;align-items:center;cursor:pointer;min-height:44px;padding:6px 0;margin:-6px 0 5px"><input type="checkbox" data-consent="" style="flex:none;width:20px;height:20px;accent-color:#8E5FA8;cursor:pointer"><span style="font:400 11.5px/1.45 'Hanken Grotesk',sans-serif;color:#8C8472;text-wrap:pretty">Message me on WhatsApp when Remet opens in Indore.</span></label>
+<p data-status="" role="status" aria-live="polite" style="margin:0;min-height:18px;max-width:286px;font:500 12px/1.45 'Hanken Grotesk',sans-serif;color:#8C8472;text-wrap:pretty"></p>
 </form>
 <div style="display:flex;gap:11px;align-items:flex-start;max-width:268px">
 <span style="flex:none;width:16px;height:1px;background:#6B6152;margin-top:11px"></span>
@@ -116,7 +120,7 @@ input::placeholder{color:#8C8472}
 <section data-screen-label="06 The map" data-emotion="aloof" data-pose="far-small" data-light="#8E5FA8,#C79BD8" data-open="0.58" data-p-gather="1" data-gather-anchor="" style="min-height:100svh;box-sizing:border-box;padding:104px 26px 72px;display:flex;flex-direction:column;justify-content:center">
 <p style="margin:0 0 20px;font:700 9.5px/1 'Hanken Grotesk',sans-serif;letter-spacing:.26em;color:#8C8472;text-transform:uppercase">04 — A real place to go</p>
 <h2 data-h="" style="margin:0 0 22px;font:800 42px/0.96 Gabarito,'Archivo Black',system-ui,sans-serif;letter-spacing:-.035em;color:#EDE7DC;text-wrap:balance">Five or six places.<br>Drawn by hand.</h2>
-<div style="display:flex;flex-wrap:wrap;gap:8px;max-width:280px;margin:0 0 22px">
+<div style="display:flex;flex-wrap:wrap;gap:8px;max-width:224px;margin:0 0 22px">
 <span style="font:500 11.5px/1 'Hanken Grotesk',sans-serif;color:#B4AA96;background:#201B13;border-radius:999px;box-shadow:-3px -3px 8px rgba(255,255,255,.024),4px 4px 10px rgba(0,0,0,.48);padding:10px 14px">Cafés</span>
 <span style="font:500 11.5px/1 'Hanken Grotesk',sans-serif;color:#B4AA96;background:#201B13;border-radius:999px;box-shadow:-3px -3px 8px rgba(255,255,255,.024),4px 4px 10px rgba(0,0,0,.48);padding:10px 14px">Cinemas</span>
 <span style="font:500 11.5px/1 'Hanken Grotesk',sans-serif;color:#B4AA96;background:#201B13;border-radius:999px;box-shadow:-3px -3px 8px rgba(255,255,255,.024),4px 4px 10px rgba(0,0,0,.48);padding:10px 14px">Gaming zones</span>
@@ -178,9 +182,13 @@ input::placeholder{color:#8C8472}
 <section data-screen-label="10 Join" data-emotion="condescending" data-pose="lurk-right-low" data-light="#8E5FA8,#C79BD8" data-open="1" data-p-verified="0.3" style="min-height:100svh;box-sizing:border-box;padding:92px 26px 40px;display:flex;flex-direction:column;justify-content:flex-end">
 <div style="width:196px;height:50px;mask-image:url(brand/wordmark.png);mask-size:contain;mask-repeat:no-repeat;mask-position:left center;background:linear-gradient(160deg,#EDE7DC,#9A9182);margin:0 0 20px"></div>
 <p style="margin:0 0 26px;max-width:280px;font:400 15px/1.6 'Hanken Grotesk',sans-serif;color:#B4AA96;text-wrap:pretty">Opening in Indore. Leave a WhatsApp number and Munshi will tell you when the door is open.</p>
-<form onSubmit="{{ noSubmit }}" style="display:flex;gap:9px;margin:0 0 22px">
+<form data-form="footer" onSubmit="{{ submit }}" style="margin:0 0 22px">
+<div style="display:flex;gap:9px;margin:0 0 13px">
 <div style="flex:1;min-width:0;display:flex;align-items:center;background:#1E1912;border-radius:11px;box-shadow:inset 5px 5px 12px rgba(0,0,0,.6),inset -5px -5px 12px rgba(255,255,255,.028);padding-left:15px"><span style="flex:none;font:500 14px/1 'Hanken Grotesk',sans-serif;color:#8C8472;padding-right:10px;border-right:1px solid rgba(237,231,220,.11)">+91</span><input type="tel" inputmode="numeric" autocomplete="tel-national" maxlength="11" aria-label="WhatsApp number" placeholder="98765 43210" style="flex:1;min-width:0;background:transparent;border:none;padding:15px 14px;font:400 14px 'Hanken Grotesk',sans-serif;color:#EDE7DC;outline:none"></div>
 <button type="submit" style="flex:none;background:linear-gradient(145deg,#C79BD8,#8E5FA8);border:none;border-radius:11px;box-shadow:-5px -5px 12px rgba(255,255,255,.03),6px 6px 15px rgba(0,0,0,.55);padding:15px 19px;font:700 13px 'Hanken Grotesk',sans-serif;letter-spacing:.02em;color:#fff;cursor:pointer">Join</button>
+</div>
+<label style="display:flex;gap:9px;align-items:center;cursor:pointer;min-height:44px;padding:6px 0;margin:-6px 0 5px"><input type="checkbox" data-consent="" style="flex:none;width:20px;height:20px;accent-color:#8E5FA8;cursor:pointer"><span style="font:400 11.5px/1.45 'Hanken Grotesk',sans-serif;color:#8C8472;text-wrap:pretty">Message me on WhatsApp when Remet opens in Indore.</span></label>
+<p data-status="" role="status" aria-live="polite" style="margin:0;min-height:18px;max-width:286px;font:500 12px/1.45 'Hanken Grotesk',sans-serif;color:#8C8472;text-wrap:pretty"></p>
 </form>
 <p style="margin:0 0 22px;max-width:296px;font:400 12.5px/1.5 'Hanken Grotesk',sans-serif;color:#8C8472;text-wrap:pretty">One message when Remet opens in your locality. Nothing else, and nothing shared.</p>
 <div style="display:flex;gap:11px;align-items:flex-start;max-width:280px;margin:0 0 32px">
@@ -241,8 +249,8 @@ const POSES = {
   // hanging in from the top, upside down — dropped far enough that the face
   // clears the edge; rim flipped with him so the light lands on it
   'above':          { right: 6,    top:    -150,  w: 352, h: 504, rot: 180, lean: null, anchor: 'center top', rim: 0.85, rimAngle: 75, rimSpread: 50, rimX: -6, rimY: 10, halo: 0.5, haloAt: '54% 24%' },
-  // turned away at the far edge — same scale, only his back and tail in frame
-  'far-small':      { right: -280, bottom: 0,     w: 400, h: 573, rot: -4, lean: 'in'  },
+  // stands in the open beside the chips — was pushed almost entirely off-screen
+  'far-small':      { right: -46,  bottom: 0,     w: 360, h: 516, rot: -4, lean: 'in', rim: 0.72, rimAngle: 268, rimSpread: 50, halo: 0.4, haloAt: '50% 40%' },
   'face-close':     { right: -160, bottom: 0,     w: 344, h: 493, rot: -3, lean: 'in'  },
   // backlit against the door — hard rim
   // the detective: backlit but WHOLE — nothing of him leaves the frame
@@ -525,8 +533,42 @@ class Component extends DCLogic {
     }, 90);
   }
 
+  async _send(form) {
+    const input = form.querySelector('input[type="tel"]');
+    const consent = form.querySelector('[data-consent]');
+    const note = form.querySelector('[data-status]');
+    const button = form.querySelector('button[type="submit"]');
+    if (!input || !note) return;
+
+    const label = button ? button.textContent : '';
+    if (button) { button.disabled = true; button.textContent = 'Sending'; button.style.opacity = '.6'; }
+    note.style.color = '#8C8472';
+    note.textContent = 'One moment.';
+
+    let res;
+    try {
+      const mod = await import('./waitlist.js');
+      res = await mod.joinWaitlist({
+        phone: input.value,
+        consent: consent ? consent.checked : false,
+        source: form.dataset.form || 'hero',
+      });
+    } catch (e) {
+      console.error('[waitlist] module failed', e);
+      res = { ok: false, message: 'Something went wrong. Try again in a moment.' };
+    }
+
+    if (button) { button.disabled = false; button.textContent = label; button.style.opacity = '1'; }
+    note.textContent = res.message;
+    note.style.color = res.ok ? '#6FB392' : '#C98B8B';
+    if (res.ok) {
+      input.value = '';
+      if (consent) consent.checked = false;
+    }
+  }
+
   renderVals() {
-    return { noSubmit: (e) => e.preventDefault() };
+    return { submit: (e) => { e.preventDefault(); this._send(e.currentTarget); } };
   }
 }
 </script>
