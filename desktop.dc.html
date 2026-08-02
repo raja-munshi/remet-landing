@@ -47,9 +47,13 @@ input::placeholder{color:#8C8472}
 </div>
 <h1 data-h="" style="margin:0 0 30px;max-width:980px;font:900 96px/0.92 Gabarito,'Archivo Black',system-ui,sans-serif;letter-spacing:-.042em;color:#EDE7DC">Verified strangers.<br>Real places.<br><span style="color:#C79BD8">Actually Meet.</span></h1>
 <p style="margin:0 0 42px;max-width:430px;font:400 17px/1.6 'Hanken Grotesk',sans-serif;color:#B4AA96;text-wrap:pretty">Social discovery for people who would rather be somewhere. First city, Indore.</p>
-<form onSubmit="{{ noSubmit }}" style="display:flex;gap:11px;margin:0 0 34px;max-width:470px">
+<form data-form="hero" onSubmit="{{ submit }}" style="margin:0 0 34px;max-width:470px">
+<div style="display:flex;gap:11px;margin:0 0 15px">
 <div style="flex:1;min-width:0;display:flex;align-items:center;background:#1E1912;border-radius:13px;box-shadow:inset 6px 6px 14px rgba(0,0,0,.6),inset -6px -6px 14px rgba(255,255,255,.028);padding-left:18px"><span style="flex:none;font:500 16px/1 'Hanken Grotesk',sans-serif;color:#8C8472;padding-right:12px;border-right:1px solid rgba(237,231,220,.11)">+91</span><input type="tel" inputmode="numeric" autocomplete="tel-national" maxlength="11" aria-label="WhatsApp number" placeholder="98765 43210" style="flex:1;min-width:0;background:transparent;border:none;padding:18px 16px;font:400 16px 'Hanken Grotesk',sans-serif;color:#EDE7DC;outline:none"></div>
 <button type="submit" style="flex:none;background:linear-gradient(145deg,#C79BD8,#8E5FA8);border:none;border-radius:13px;box-shadow:-6px -6px 14px rgba(255,255,255,.03),7px 7px 18px rgba(0,0,0,.55);padding:18px 30px;font:700 15px 'Hanken Grotesk',sans-serif;letter-spacing:.02em;color:#fff;cursor:pointer">Join the list</button>
+</div>
+<label style="display:flex;gap:10px;align-items:center;cursor:pointer;min-height:44px;padding:6px 0;margin:-6px 0 6px"><input type="checkbox" data-consent="" style="flex:none;width:20px;height:20px;accent-color:#8E5FA8;cursor:pointer"><span style="font:400 12.5px/1.45 'Hanken Grotesk',sans-serif;color:#8C8472;text-wrap:pretty">Message me on WhatsApp when Remet opens in Indore.</span></label>
+<p data-status="" role="status" aria-live="polite" style="margin:0;min-height:20px;max-width:470px;font:500 13px/1.45 'Hanken Grotesk',sans-serif;color:#8C8472;text-wrap:pretty"></p>
 </form>
 <div style="display:flex;gap:15px;align-items:flex-start;max-width:400px">
 <span style="flex:none;width:22px;height:1px;background:#6B6152;margin-top:15px"></span>
@@ -215,9 +219,13 @@ input::placeholder{color:#8C8472}
 <div style="max-width:660px;margin:0 0 70px">
 <div style="width:262px;height:66px;mask-image:url(brand/wordmark.png);mask-size:contain;mask-repeat:no-repeat;mask-position:left center;background:linear-gradient(160deg,#EDE7DC,#9A9182);margin:0 0 28px"></div>
 <p style="margin:0 0 34px;max-width:460px;font:400 17px/1.6 'Hanken Grotesk',sans-serif;color:#B4AA96;text-wrap:pretty">Opening in Indore. Leave a WhatsApp number and Munshi will tell you when the door is open.</p>
-<form onSubmit="{{ noSubmit }}" style="display:flex;gap:11px;margin:0 0 16px;max-width:470px">
+<form data-form="footer" onSubmit="{{ submit }}" style="margin:0 0 16px;max-width:470px">
+<div style="display:flex;gap:11px;margin:0 0 15px">
 <div style="flex:1;min-width:0;display:flex;align-items:center;background:#1E1912;border-radius:13px;box-shadow:inset 6px 6px 14px rgba(0,0,0,.6),inset -6px -6px 14px rgba(255,255,255,.028);padding-left:18px"><span style="flex:none;font:500 16px/1 'Hanken Grotesk',sans-serif;color:#8C8472;padding-right:12px;border-right:1px solid rgba(237,231,220,.11)">+91</span><input type="tel" inputmode="numeric" autocomplete="tel-national" maxlength="11" aria-label="WhatsApp number" placeholder="98765 43210" style="flex:1;min-width:0;background:transparent;border:none;padding:18px 16px;font:400 16px 'Hanken Grotesk',sans-serif;color:#EDE7DC;outline:none"></div>
 <button type="submit" style="flex:none;background:linear-gradient(145deg,#C79BD8,#8E5FA8);border:none;border-radius:13px;box-shadow:-6px -6px 14px rgba(255,255,255,.03),7px 7px 18px rgba(0,0,0,.55);padding:18px 30px;font:700 15px 'Hanken Grotesk',sans-serif;letter-spacing:.02em;color:#fff;cursor:pointer">Join the list</button>
+</div>
+<label style="display:flex;gap:10px;align-items:center;cursor:pointer;min-height:44px;padding:6px 0;margin:-6px 0 6px"><input type="checkbox" data-consent="" style="flex:none;width:20px;height:20px;accent-color:#8E5FA8;cursor:pointer"><span style="font:400 12.5px/1.45 'Hanken Grotesk',sans-serif;color:#8C8472;text-wrap:pretty">Message me on WhatsApp when Remet opens in Indore.</span></label>
+<p data-status="" role="status" aria-live="polite" style="margin:0;min-height:20px;max-width:470px;font:500 13px/1.45 'Hanken Grotesk',sans-serif;color:#8C8472;text-wrap:pretty"></p>
 </form>
 <p style="margin:0 0 30px;max-width:440px;font:400 13.5px/1.5 'Hanken Grotesk',sans-serif;color:#8C8472;text-wrap:pretty">One message when Remet opens in your locality. Nothing else, and nothing shared.</p>
 <div style="display:flex;gap:15px;align-items:flex-start;max-width:430px">
@@ -556,8 +564,42 @@ class Component extends DCLogic {
     }, 90);
   }
 
+  async _send(form) {
+    const input = form.querySelector('input[type="tel"]');
+    const consent = form.querySelector('[data-consent]');
+    const note = form.querySelector('[data-status]');
+    const button = form.querySelector('button[type="submit"]');
+    if (!input || !note) return;
+
+    const label = button ? button.textContent : '';
+    if (button) { button.disabled = true; button.textContent = 'Sending'; button.style.opacity = '.6'; }
+    note.style.color = '#8C8472';
+    note.textContent = 'One moment.';
+
+    let res;
+    try {
+      const mod = await import('./waitlist.js');
+      res = await mod.joinWaitlist({
+        phone: input.value,
+        consent: consent ? consent.checked : false,
+        source: form.dataset.form || 'hero',
+      });
+    } catch (e) {
+      console.error('[waitlist] module failed', e);
+      res = { ok: false, message: 'Something went wrong. Try again in a moment.' };
+    }
+
+    if (button) { button.disabled = false; button.textContent = label; button.style.opacity = '1'; }
+    note.textContent = res.message;
+    note.style.color = res.ok ? '#6FB392' : '#C98B8B';
+    if (res.ok) {
+      input.value = '';
+      if (consent) consent.checked = false;
+    }
+  }
+
   renderVals() {
-    return { noSubmit: (e) => e.preventDefault() };
+    return { submit: (e) => { e.preventDefault(); this._send(e.currentTarget); } };
   }
 }
 </script>
