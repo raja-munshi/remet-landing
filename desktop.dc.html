@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics=""><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&amp;family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&amp;family=Hanken+Grotesk:wght@400..800&amp;display=swap" rel="stylesheet"><style>
+html{background:#1A160F}
+body{margin:0;background:#1A160F;color:#EDE7DC;font-family:'Hanken Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:#C79BD8;text-decoration:none}a:hover{color:#EDE7DC}
+input::placeholder{color:#8C8472}
+::selection{background:#8E5FA8;color:#fff}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes livepulse{0%{box-shadow:0 0 0 0 rgba(44,146,162,.55)}70%{box-shadow:0 0 0 12px rgba(44,146,162,0)}100%{box-shadow:0 0 0 0 rgba(44,146,162,0)}}
+</style></helmet>
+
+<canvas data-door="" style="position:fixed;inset:0;width:100%;height:100%;display:block;z-index:0"></canvas>
+
+<div style="position:fixed;inset:0;z-index:1;pointer-events:none;overflow:hidden">
+<div data-munshi="" style="position:absolute;right:-10%;bottom:-8%;width:780px;height:1064px;opacity:1;transition:opacity .24s ease">
+<div data-mhalo="" style="position:absolute;inset:-14% -18%;opacity:0;filter:blur(46px);transition:opacity .3s ease;pointer-events:none"></div>
+<div data-mrim="" style="position:absolute;inset:0;transform:translate(14px,-9px);mask-image:url(munshi/skeptical.png);mask-size:contain;mask-repeat:no-repeat;mask-position:center;background:linear-gradient(255deg,#C79BD8,#6B4483 44%,rgba(0,0,0,0) 73%);opacity:.5"></div>
+<div data-mbody="" style="position:absolute;inset:0;mask-image:url(munshi/skeptical.png);mask-size:contain;mask-repeat:no-repeat;mask-position:center;background:linear-gradient(250deg,#241F16,#0E0B07 62%)"></div>
+</div>
+</div>
+
+<header style="position:fixed;top:0;left:0;right:0;z-index:4;display:flex;justify-content:center;pointer-events:none;padding-bottom:34px;opacity:0;transition:opacity .35s ease;background:linear-gradient(180deg,#1A160F 0%,rgba(26,22,15,.94) 46%,rgba(26,22,15,.7) 72%,rgba(26,22,15,0) 100%)">
+<div style="width:100%;max-width:1200px;box-sizing:border-box;padding:26px 40px;display:flex;align-items:center;justify-content:space-between">
+<div style="display:flex;align-items:center;gap:12px">
+<div style="width:30px;height:26px;mask-image:url(brand/mark.png);mask-size:contain;mask-repeat:no-repeat;mask-position:center;background:#EDE7DC"></div>
+<div style="width:78px;height:20px;mask-image:url(brand/wordmark.png);mask-size:contain;mask-repeat:no-repeat;mask-position:left center;background:#EDE7DC"></div>
+</div>
+<span style="font:700 10.5px/1 'Hanken Grotesk',sans-serif;letter-spacing:.28em;color:#8C8472;text-transform:uppercase">Indore</span>
+</div>
+</header>
+
+<main style="position:relative;z-index:2">
+
+<section data-screen-label="01 Hero" data-emotion="skeptical" data-pose="lurk-right" data-light="#8E5FA8,#C79BD8" data-open="0.14" style="min-height:100vh;box-sizing:border-box;padding:150px 80px 110px;display:flex;align-items:center">
+<div style="width:100%;max-width:1200px;margin:0 auto">
+<div style="display:flex;flex-direction:column;align-items:flex-start;gap:18px;margin:0 0 40px">
+<div style="width:208px;height:53px;mask-image:url(brand/wordmark.png);mask-size:contain;mask-repeat:no-repeat;mask-position:left center;background:#EDE7DC"></div>
+<span style="font:700 12.5px/1 'Hanken Grotesk',sans-serif;letter-spacing:.34em;color:#8C8472;text-transform:uppercase">Meet.For Real</span>
+</div>
+<h1 data-h="" style="margin:0 0 30px;max-width:980px;font:900 96px/0.92 Gabarito,'Archivo Black',system-ui,sans-serif;letter-spacing:-.042em;color:#EDE7DC">Verified strangers.<br>Real places.<br><span style="color:#C79BD8">Actually Meet.</span></h1>
+<p style="margin:0 0 42px;max-width:430px;font:400 17px/1.6 'Hanken Grotesk',sans-serif;color:#B4AA96;text-wrap:pretty">Social discovery for people who would rather be somewhere. First city, Indore.</p>
+<form onSubmit="{{ noSubmit }}" style="display:flex;gap:11px;margin:0 0 34px;max-width:470px">
+<div style="flex:1;min-width:0;display:flex;align-items:center;background:#1E1912;border-radius:13px;box-shadow:inset 6px 6px 14px rgba(0,0,0,.6),inset -6px -6px 14px rgba(255,255,255,.028);padding-left:18px"><span style="flex:none;font:500 16px/1 'Hanken Grotesk',sans-serif;color:#8C8472;padding-right:12px;border-right:1px solid rgba(237,231,220,.11)">+91</span><input type="tel" inputmode="numeric" autocomplete="tel-national" maxlength="11" aria-label="WhatsApp number" placeholder="98765 43210" style="flex:1;min-width:0;background:transparent;border:none;padding:18px 16px;font:400 16px 'Hanken Grotesk',sans-serif;color:#EDE7DC;outline:none"></div>
+<button type="submit" style="flex:none;background:linear-gradient(145deg,#C79BD8,#8E5FA8);border:none;border-radius:13px;box-shadow:-6px -6px 14px rgba(255,255,255,.03),7px 7px 18px rgba(0,0,0,.55);padding:18px 30px;font:700 15px 'Hanken Grotesk',sans-serif;letter-spacing:.02em;color:#fff;cursor:pointer">Join the list</button>
+</form>
+<div style="display:flex;gap:15px;align-items:flex-start;max-width:400px">
+<span style="flex:none;width:22px;height:1px;background:#6B6152;margin-top:15px"></span>
+<p style="margin:0;font:italic 300 21px/1.45 Fraunces,serif;color:#9A9182;text-wrap:pretty">“Talk first. I’ll decide if you’re worth a table.”</p>
+</div>
+</div>
+</section>
+
+<section data-screen-label="02 The problem" data-emotion="weary" data-pose="sunk-left" data-light="#6B4483,#8E5FA8" data-open="0.05" style="min-height:100vh;box-sizing:border-box;padding:110px 80px;display:flex;align-items:center">
+<div style="width:100%;max-width:1200px;margin:0 auto;display:flex;justify-content:flex-end">
+<div style="max-width:620px">
+<p style="margin:0 0 30px;font:700 11px/1 'Hanken Grotesk',sans-serif;letter-spacing:.28em;color:#8C8472;text-transform:uppercase">The problem</p>
+<h2 data-h="" style="margin:0 0 30px;font:800 60px/0.94 Gabarito,'Archivo Black',system-ui,sans-serif;letter-spacing:-.035em;color:#EDE7DC;text-wrap:balance">Four hundred matches.<br>Nothing on Saturday.</h2>
+<p style="margin:0 0 34px;max-width:490px;font:400 17px/1.65 'Hanken Grotesk',sans-serif;color:#B4AA96;text-wrap:pretty">Chat is a comfortable place to hide. Remet counts a connection only once it has happened offline.</p>
+<div style="display:flex;gap:15px;align-items:flex-start;max-width:420px">
+<span style="flex:none;width:22px;height:1px;background:#6B6152;margin-top:15px"></span>
+<p style="margin:0;font:italic 300 21px/1.45 Fraunces,serif;color:#9A9182;text-wrap:pretty">“Everyone’s talking. Nobody’s anywhere.”</p>
+</div>
+</div>
+</div>
+</section>
+
+<section data-screen-label="03 Verified" data-emotion="pedantic" data-pose="jamb-right" data-light="#4E7E68,#5E9E80" data-open="0.32" data-p-verified="1" style="min-height:100vh;box-sizing:border-box;padding:110px 80px;display:flex;align-items:center">
+<div style="width:100%;max-width:1200px;margin:0 auto">
+<div style="max-width:620px">
+<p style="margin:0 0 30px;font:700 11px/1 'Hanken Grotesk',sans-serif;letter-spacing:.28em;color:#8C8472;text-transform:uppercase">01 — Verified, not exposed</p>
+<h2 data-h="" style="margin:0 0 30px;font:800 60px/0.94 Gabarito,'Archivo Black',system-ui,sans-serif;letter-spacing:-.035em;color:#EDE7DC;text-wrap:balance">Verified underneath.<br>No real name on top.</h2>
+<p style="margin:0 0 34px;max-width:480px;font:400 17px/1.65 'Hanken Grotesk',sans-serif;color:#B4AA96;text-wrap:pretty">Aadhaar-backed onboarding with a liveness check — deliberately high friction, because friction is the filter. What everyone else sees is a pseudonym.</p>
+<div style="display:flex;align-items:center;gap:16px;background:#201B13;border-radius:18px;box-shadow:-8px -8px 18px rgba(255,255,255,.028),9px 9px 22px rgba(0,0,0,.55);padding:20px 24px;margin:0 0 34px;max-width:440px;box-sizing:border-box">
+<span style="flex:none;width:34px;height:34px;border-radius:50%;background:linear-gradient(145deg,#6FB392,#4E7E68);box-shadow:-3px -3px 6px rgba(255,255,255,.05),4px 4px 9px rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center;font:700 16px 'Hanken Grotesk',sans-serif;color:#16281F">✓</span>
+<span style="font:500 15px/1.45 'Hanken Grotesk',sans-serif;color:#CFC6B4">Aadhaar-backed. Liveness-checked. Number discarded.</span>
+</div>
+<div style="display:flex;gap:15px;align-items:flex-start;max-width:420px">
+<span style="flex:none;width:22px;height:1px;background:#6B6152;margin-top:15px"></span>
+<p style="margin:0;font:italic 300 21px/1.45 Fraunces,serif;color:#9A9182;text-wrap:pretty">“A new name. Cute. The ledger has your real one.”</p>
+</div>
+</div>
+</div>
+</section>
+
+<section data-screen-label="04 Taste" data-emotion="contemptuous" data-pose="face-close" data-light="#8E5FA8,#C79BD8" data-open="0.40" data-p-verified="0.5" data-p-live="0.12" style="min-height:100vh;box-sizing:border-box;padding:110px 80px;display:flex;align-items:center">
+<div style="width:100%;max-width:1200px;margin:0 auto">
+<div style="max-width:620px">
+<p style="margin:0 0 30px;font:700 11px/1 'Hanken Grotesk',sans-serif;letter-spacing:.28em;color:#8C8472;text-transform:uppercase">02 — Matched on taste</p>
+<h2 data-h="" style="margin:0 0 30px;font:800 60px/0.94 Gabarito,'Archivo Black',system-ui,sans-serif;letter-spacing:-.035em;color:#EDE7DC;text-wrap:balance">Not your face.<br>Not your name.</h2>
+<p style="margin:0 0 38px;max-width:480px;font:400 17px/1.65 'Hanken Grotesk',sans-serif;color:#B4AA96;text-wrap:pretty">None of it tells you whether an hour together is worth having. Remet reads taste instead — what you watch, play, read and argue about — and puts you near the people it rhymes with.</p>
+<div style="display:flex;align-items:center;max-width:430px;margin:0 0 20px">
+<span style="flex:none;width:66px;height:66px;border-radius:50%;background:linear-gradient(145deg,#2C2519,#191510);box-shadow:-5px -5px 12px rgba(255,255,255,.03),6px 6px 15px rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;font:800 25px Gabarito,sans-serif;color:#CFC6B4">L</span>
+<span style="flex:1;height:1px;background:linear-gradient(90deg,#8E5FA8,#5E9E80)"></span>
+<span style="flex:none;width:66px;height:66px;border-radius:50%;background:linear-gradient(145deg,#2C2519,#191510);box-shadow:-5px -5px 12px rgba(255,255,255,.03),6px 6px 15px rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;font:800 25px Gabarito,sans-serif;color:#CFC6B4">B</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:9px;max-width:430px;margin:0 0 34px">
+<span style="font:500 13px/1 'Hanken Grotesk',sans-serif;color:#B4AA96;background:#201B13;border-radius:999px;box-shadow:-3px -3px 9px rgba(255,255,255,.024),4px 4px 11px rgba(0,0,0,.48);padding:12px 17px">Films that end badly</span>
+<span style="font:500 13px/1 'Hanken Grotesk',sans-serif;color:#B4AA96;background:#201B13;border-radius:999px;box-shadow:-3px -3px 9px rgba(255,255,255,.024),4px 4px 11px rgba(0,0,0,.48);padding:12px 17px">Losing at chess</span>
+<span style="font:500 13px/1 'Hanken Grotesk',sans-serif;color:#B4AA96;background:#201B13;border-radius:999px;box-shadow:-3px -3px 9px rgba(255,255,255,.024),4px 4px 11px rgba(0,0,0,.48);padding:12px 17px">Filter coffee</span>
+</div>
+<div style="display:flex;gap:15px;align-items:flex-start;max-width:420px">
+<span style="flex:none;width:22px;height:1px;background:#6B6152;margin-top:15px"></span>
+<p style="margin:0;font:italic 300 21px/1.45 Fraunces,serif;color:#9A9182;text-wrap:pretty">“Taste. Yours needs work. But it’s a start.”</p>
+</div>
+</div>
+</div>
+</section>
+
+<section data-screen-label="05 Who's around" data-emotion="curious" data-pose="above" data-light="#1C7382,#2C92A2" data-open="0.46" data-p-live="1" data-p-verified="0.35" style="min-height:100vh;box-sizing:border-box;padding:110px 80px;display:flex;align-items:center">
+<div style="width:100%;max-width:1200px;margin:0 auto">
+<div style="max-width:620px">
+<p style="margin:0 0 30px;font:700 11px/1 'Hanken Grotesk',sans-serif;letter-spacing:.28em;color:#8C8472;text-transform:uppercase">03 — Who’s around, now</p>
+<h2 data-h="" style="margin:0 0 30px;font:800 60px/0.94 Gabarito,'Archivo Black',system-ui,sans-serif;letter-spacing:-.035em;color:#EDE7DC;text-wrap:balance">Not everyone nearby.<br>The ones here now.</h2>
+<p style="margin:0 0 30px;max-width:490px;font:400 17px/1.65 'Hanken Grotesk',sans-serif;color:#B4AA96;text-wrap:pretty">Live proximity, not an endless deck. People nearby and open — to a chai, a film, an hour of pickleball. Five minutes to make it a plan, then it dies.</p>
+<div style="display:flex;align-items:center;gap:13px;margin:0 0 34px">
+<span style="flex:none;width:11px;height:11px;border-radius:50%;background:#2C92A2;animation:livepulse 2.4s ease-out infinite"></span>
+<span style="font:700 11px/1 'Hanken Grotesk',sans-serif;letter-spacing:.24em;color:#4FA9B6;text-transform:uppercase">Live now</span>
+</div>
+<div style="display:flex;gap:15px;align-items:flex-start;max-width:420px">
+<span style="flex:none;width:22px;height:1px;background:#6B6152;margin-top:15px"></span>
+<p style="margin:0;font:italic 300 21px/1.45 Fraunces,serif;color:#9A9182;text-wrap:pretty">“Five minutes. If you can’t manage that, I’ve learned something.”</p>
+</div>
+</div>
+</div>
+</section>
+
+<section data-screen-label="06 The map" data-emotion="aloof" data-pose="far-small" data-light="#8E5FA8,#C79BD8" data-open="0.58" data-p-gather="1" data-gather-anchor="" style="min-height:100vh;box-sizing:border-box;padding:110px 80px;display:flex;align-items:center">
+<div style="width:100%;max-width:1200px;margin:0 auto">
+<div style="max-width:620px">
+<p style="margin:0 0 30px;font:700 11px/1 'Hanken Grotesk',sans-serif;letter-spacing:.28em;color:#8C8472;text-transform:uppercase">04 — A real place to go</p>
+<h2 data-h="" style="margin:0 0 30px;font:800 60px/0.94 Gabarito,'Archivo Black',system-ui,sans-serif;letter-spacing:-.035em;color:#EDE7DC;text-wrap:balance">Five places.<br>Drawn by hand.</h2>
+<p style="margin:0 0 32px;max-width:490px;font:400 17px/1.65 'Hanken Grotesk',sans-serif;color:#B4AA96;text-wrap:pretty">Not a tile layer. Your locality, holding only the places worth meeting at — nothing else earns a pin.</p>
+<div style="display:flex;flex-wrap:wrap;gap:10px;width:min(530px, 48vw - 100px);margin:0 0 34px">
+<span style="font:500 13px/1 'Hanken Grotesk',sans-serif;color:#B4AA96;background:#201B13;border-radius:999px;box-shadow:-3px -3px 9px rgba(255,255,255,.024),4px 4px 11px rgba(0,0,0,.48);padding:13px 18px">Cafés</span>
+<span style="font:500 13px/1 'Hanken Grotesk',sans-serif;color:#B4AA96;background:#201B13;border-radius:999px;box-shadow:-3px -3px 9px rgba(255,255,255,.024),4px 4px 11px rgba(0,0,0,.48);padding:13px 18px">Cinemas</span>
+<span style="font:500 13px/1 'Hanken Grotesk',sans-serif;color:#B4AA96;background:#201B13;border-radius:999px;box-shadow:-3px -3px 9px rgba(255,255,255,.024),4px 4px 11px rgba(0,0,0,.48);padding:13px 18px">Gaming zones</span>
+<span style="font:500 13px/1 'Hanken Grotesk',sans-serif;color:#B4AA96;background:#201B13;border-radius:999px;box-shadow:-3px -3px 9px rgba(255,255,255,.024),4px 4px 11px rgba(0,0,0,.48);padding:13px 18px">Comedy clubs</span>
+<span style="font:500 13px/1 'Hanken Grotesk',sans-serif;color:#B4AA96;background:#201B13;border-radius:999px;box-shadow:-3px -3px 9px rgba(255,255,255,.024),4px 4px 11px rgba(0,0,0,.48);padding:13px 18px">Live music</span>
+<span style="font:500 13px/1 'Hanken Grotesk',sans-serif;color:#B4AA96;background:#201B13;border-radius:999px;box-shadow:-3px -3px 9px rgba(255,255,255,.024),4px 4px 11px rgba(0,0,0,.48);padding:13px 18px">Art studios</span>
+</div>
+<div style="display:flex;gap:15px;align-items:flex-start;max-width:420px">
+<span style="flex:none;width:22px;height:1px;background:#6B6152;margin-top:15px"></span>
+<p style="margin:0;font:italic 300 21px/1.45 Fraunces,serif;color:#9A9182;text-wrap:pretty">“I did the math so you two don’t have to.”</p>
+</div>
+</div>
+</div>
+</section>
+
+<section data-screen-label="07 How it works" data-emotion="puzzled" data-pose="edge-left" data-light="#6B4483,#8E5FA8" data-open="0.38" data-p-gather="0.25" style="min-height:100vh;box-sizing:border-box;padding:110px 80px;display:flex;align-items:center">
+<div style="width:100%;max-width:1200px;margin:0 auto;display:flex;justify-content:flex-end">
+<div style="flex:none;width:min(880px, 100% - 460px)">
+<p style="margin:0 0 30px;font:700 11px/1 'Hanken Grotesk',sans-serif;letter-spacing:.28em;color:#8C8472;text-transform:uppercase">How it works</p>
+<h2 data-h="" style="margin:0 0 42px;font:800 60px/0.94 Gabarito,'Archivo Black',system-ui,sans-serif;letter-spacing:-.035em;color:#EDE7DC">Four steps. No swiping.</h2>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:1fr;gap:16px;margin:0 0 40px;max-width:620px">
+<div style="background:#201B13;border-radius:20px;box-shadow:-8px -8px 18px rgba(255,255,255,.028),9px 9px 22px rgba(0,0,0,.55);padding:28px 24px;display:flex;flex-direction:column;justify-content:space-between;gap:16px;height:100%;box-sizing:border-box">
+<span style="font:800 24px/1 Gabarito,sans-serif;color:#C79BD8">01</span>
+<span style="font:400 16px/1.4 'Hanken Grotesk',sans-serif;color:#CFC6B4">Get verified. Once, properly.</span>
+</div>
+<div style="background:#201B13;border-radius:20px;box-shadow:-8px -8px 18px rgba(255,255,255,.028),9px 9px 22px rgba(0,0,0,.55);padding:28px 24px;display:flex;flex-direction:column;justify-content:space-between;gap:16px;height:100%;box-sizing:border-box">
+<span style="font:800 24px/1 Gabarito,sans-serif;color:#C79BD8">02</span>
+<span style="font:400 16px/1.4 'Hanken Grotesk',sans-serif;color:#CFC6B4">Go live. See who’s nearby.</span>
+</div>
+<div style="background:#201B13;border-radius:20px;box-shadow:-8px -8px 18px rgba(255,255,255,.028),9px 9px 22px rgba(0,0,0,.55);padding:28px 24px;display:flex;flex-direction:column;justify-content:space-between;gap:16px;height:100%;box-sizing:border-box">
+<span style="font:800 24px/1 Gabarito,sans-serif;color:#C79BD8">03</span>
+<span style="font:400 16px/1.4 'Hanken Grotesk',sans-serif;color:#CFC6B4">Five minutes to talk. Then decide.</span>
+</div>
+<div style="background:#201B13;border-radius:20px;box-shadow:-8px -8px 18px rgba(255,255,255,.028),9px 9px 22px rgba(0,0,0,.55);padding:28px 24px;display:flex;flex-direction:column;justify-content:space-between;gap:16px;height:100%;box-sizing:border-box">
+<span style="font:800 24px/1 Gabarito,sans-serif;color:#C79BD8">04</span>
+<span style="font:400 16px/1.4 'Hanken Grotesk',sans-serif;color:#CFC6B4">Meet at the spot. Tie the knot.</span>
+</div>
+</div>
+<div style="display:flex;gap:15px;align-items:flex-start;max-width:440px">
+<span style="flex:none;width:22px;height:1px;background:#6B6152;margin-top:15px"></span>
+<p style="margin:0;font:italic 300 21px/1.45 Fraunces,serif;color:#9A9182;text-wrap:pretty">“Four steps. I have watched people fail at two.”</p>
+</div>
+</div>
+</div>
+</section>
+
+<section data-screen-label="08 Connection Knot" data-emotion="winking" data-pose="full-centre" data-light="#4E7E68,#6FB392" data-open="0.72" data-knot="1" data-p-knot="1" data-p-verified="0.5" data-knot-anchor="" style="min-height:100vh;box-sizing:border-box;padding:110px 80px;display:flex;align-items:center">
+<div style="width:100%;max-width:1200px;margin:0 auto">
+<div style="max-width:620px">
+<p style="margin:0 0 30px;font:700 11px/1 'Hanken Grotesk',sans-serif;letter-spacing:.28em;color:#8C8472;text-transform:uppercase">05 — The connection knot</p>
+<h2 data-h="" style="margin:0 0 30px;font:800 66px/0.92 Gabarito,'Archivo Black',system-ui,sans-serif;letter-spacing:-.038em;color:#EDE7DC;text-wrap:balance">It only counts<br>in person.</h2>
+<p style="margin:0 0 34px;max-width:470px;font:400 17px/1.65 'Hanken Grotesk',sans-serif;color:#B4AA96;text-wrap:pretty">Your phones confirm it between them when you are both actually there. No screenshot, no streak, no score. It is the one thing Remet counts.</p>
+<div style="display:flex;gap:15px;align-items:flex-start;max-width:450px">
+<span style="flex:none;width:22px;height:1px;background:#6B6152;margin-top:15px"></span>
+<p style="margin:0;font:italic 300 21px/1.45 Fraunces,serif;color:#9A9182;text-wrap:pretty">“Found each other. Now put the phone down — even I know that’s the point.”</p>
+</div>
+</div>
+</div>
+</section>
+
+<section data-screen-label="09 Munshi" data-emotion="judgmental" data-pose="huge-close" data-light="#8E5FA8,#C79BD8" data-open="0.50" style="min-height:100vh;box-sizing:border-box;padding:110px 80px;display:flex;align-items:center">
+<div style="width:100%;max-width:1200px;margin:0 auto">
+<div style="max-width:560px">
+<p style="margin:0 0 30px;font:700 11px/1 'Hanken Grotesk',sans-serif;letter-spacing:.28em;color:#8C8472;text-transform:uppercase">06 — The munshi</p>
+<h2 data-h="" style="margin:0 0 30px;font:900 78px/0.9 Gabarito,'Archivo Black',system-ui,sans-serif;letter-spacing:-.045em;color:#EDE7DC;text-wrap:balance">He keeps the record.</h2>
+<p style="margin:0 0 34px;max-width:470px;font:400 17px/1.65 'Hanken Grotesk',sans-serif;color:#B4AA96;text-wrap:pretty">A munshi is the clerk-scribe of the Persianate tradition — the one who drafts the letter and knows exactly what you said and when. Ours is a cat. He screens, he notes, he rarely approves.</p>
+<p style="margin:0;max-width:430px;font:italic 300 30px/1.32 Fraunces,serif;color:#C79BD8;text-wrap:pretty">“Conversation is the toll you pay to get past me.”</p>
+</div>
+</div>
+</section>
+
+<section data-screen-label="10 Join" data-emotion="condescending" data-pose="lurk-right-low" data-light="#8E5FA8,#C79BD8" data-open="1" data-p-verified="0.3" style="min-height:100vh;box-sizing:border-box;padding:130px 80px 44px;display:flex;flex-direction:column;justify-content:flex-end">
+<div style="width:100%;max-width:1200px;margin:0 auto">
+<div style="max-width:660px;margin:0 0 70px">
+<div style="width:262px;height:66px;mask-image:url(brand/wordmark.png);mask-size:contain;mask-repeat:no-repeat;mask-position:left center;background:linear-gradient(160deg,#EDE7DC,#9A9182);margin:0 0 28px"></div>
+<p style="margin:0 0 34px;max-width:460px;font:400 17px/1.6 'Hanken Grotesk',sans-serif;color:#B4AA96;text-wrap:pretty">Opening in Indore. Leave a WhatsApp number and Munshi will tell you when the door is open.</p>
+<form onSubmit="{{ noSubmit }}" style="display:flex;gap:11px;margin:0 0 16px;max-width:470px">
+<div style="flex:1;min-width:0;display:flex;align-items:center;background:#1E1912;border-radius:13px;box-shadow:inset 6px 6px 14px rgba(0,0,0,.6),inset -6px -6px 14px rgba(255,255,255,.028);padding-left:18px"><span style="flex:none;font:500 16px/1 'Hanken Grotesk',sans-serif;color:#8C8472;padding-right:12px;border-right:1px solid rgba(237,231,220,.11)">+91</span><input type="tel" inputmode="numeric" autocomplete="tel-national" maxlength="11" aria-label="WhatsApp number" placeholder="98765 43210" style="flex:1;min-width:0;background:transparent;border:none;padding:18px 16px;font:400 16px 'Hanken Grotesk',sans-serif;color:#EDE7DC;outline:none"></div>
+<button type="submit" style="flex:none;background:linear-gradient(145deg,#C79BD8,#8E5FA8);border:none;border-radius:13px;box-shadow:-6px -6px 14px rgba(255,255,255,.03),7px 7px 18px rgba(0,0,0,.55);padding:18px 30px;font:700 15px 'Hanken Grotesk',sans-serif;letter-spacing:.02em;color:#fff;cursor:pointer">Join the list</button>
+</form>
+<p style="margin:0 0 30px;max-width:440px;font:400 13.5px/1.5 'Hanken Grotesk',sans-serif;color:#8C8472;text-wrap:pretty">One message when Remet opens in your locality. Nothing else, and nothing shared.</p>
+<div style="display:flex;gap:15px;align-items:flex-start;max-width:430px">
+<span style="flex:none;width:22px;height:1px;background:#6B6152;margin-top:15px"></span>
+<p style="margin:0;font:italic 300 21px/1.45 Fraunces,serif;color:#9A9182;text-wrap:pretty">“Fine. Leave it. I’ll add you to the ledger.”</p>
+</div>
+</div>
+<div style="border-top:1px solid rgba(237,231,220,.09);padding-top:30px;display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap">
+<div style="max-width:340px">
+<p style="margin:0 0 8px;font:500 15px/1.45 'Hanken Grotesk',sans-serif;color:#CFC6B4;text-wrap:pretty">Run a café, gaming zone or studio in Indore?</p>
+<a href="#venues" style="font:700 13.5px/1 'Hanken Grotesk',sans-serif;color:#C79BD8;border-bottom:1px solid rgba(199,155,216,.4);padding-bottom:3px">Get on the map</a>
+</div>
+<div style="display:flex;flex-direction:column;align-items:flex-end;gap:12px">
+<div style="display:flex;gap:26px">
+<a href="#privacy" style="font:400 13px/1 'Hanken Grotesk',sans-serif;color:#8C8472">Privacy</a>
+<a href="#terms" style="font:400 13px/1 'Hanken Grotesk',sans-serif;color:#8C8472">Terms</a>
+<a href="mailto:raja@remet.me" style="font:400 13px/1 'Hanken Grotesk',sans-serif;color:#8C8472">raja@remet.me</a>
+</div>
+<span style="font:400 11px/1.5 'Hanken Grotesk',sans-serif;letter-spacing:.12em;color:#8C8472;text-transform:uppercase">Remet Socials Private Limited</span>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+
+<div aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden;pointer-events:none">
+<i data-face="skeptical" style="mask-image:url(munshi/skeptical.png)"></i>
+<i data-face="weary" style="mask-image:url(munshi/weary.png)"></i>
+<i data-face="pedantic" style="mask-image:url(munshi/pedantic.png)"></i>
+<i data-face="contemptuous" style="mask-image:url(munshi/contemptuous.png)"></i>
+<i data-face="curious" style="mask-image:url(munshi/curious.png)"></i>
+<i data-face="aloof" style="mask-image:url(munshi/aloof.png)"></i>
+<i data-face="puzzled" style="mask-image:url(munshi/puzzled.png)"></i>
+<i data-face="melancholy" style="mask-image:url(munshi/melancholy.png)"></i>
+<i data-face="sarcastic" style="mask-image:url(munshi/sarcastic.png)"></i>
+<i data-face="condescending" style="mask-image:url(munshi/condescending.png)"></i>
+</div>
+
+<template id="__bundler_thumbnail"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><rect width="100" height="100" rx="18" fill="#1A160F"></rect><circle cx="39" cy="45" r="11" fill="#C79BD8"></circle><circle cx="62" cy="55" r="11" fill="#5E9E80"></circle><rect x="30" y="72" width="40" height="4" rx="2" fill="#8C8472"></rect></svg></template>
+
+<div data-scrollhint="" style="position:fixed;left:0;right:0;bottom:0;z-index:5;display:flex;flex-direction:column;align-items:center;gap:9px;padding:52px 0 24px;pointer-events:none;opacity:0;transition:opacity .4s ease;background:linear-gradient(0deg,#1A160F 0%,rgba(26,22,15,.92) 42%,rgba(26,22,15,.6) 70%,rgba(26,22,15,0) 100%)">
+<span style="font:700 9.5px/1 'Hanken Grotesk',sans-serif;letter-spacing:.36em;color:#8C8472;text-transform:uppercase">Scroll</span>
+<div style="width:1px;height:30px;background:linear-gradient(#8C8472,rgba(140,132,114,0));animation:bob 2.6s ease-in-out infinite"></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:900},&quot;munshiReveal&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;knot&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;knot&quot;,&quot;never&quot;],&quot;section&quot;:&quot;Munshi&quot;},&quot;headlineScale&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:1,&quot;min&quot;:0.8,&quot;max&quot;:1.3,&quot;step&quot;:0.05,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Type&quot;}}">
+// Desktop staging. Munshi is no longer a sliver at the edge of a phone column —
+// he owns the right third of a wide frame, so every pose is re-cut for landscape
+// and clipped by the viewport instead of a 430px column.
+const POSES = {
+  // One scale band — 580-780 wide at 1440 — so he never shrinks to a sticker.
+  // 'huge-close' is the single deliberate exception.
+  // the hero: brightest rim on the page + a glow behind the head, so his
+  // expression reads instead of going flat black on first impression
+  'lurk-right':     { right: '-10%', bottom: '-6%',  w: 780,  h: 1118, rot: -2, lean: 'in', rim: 0.95, rimAngle: 262, rimSpread: 54, halo: 0.62, haloAt: '40% 40%' },
+  // rising from below — face clear of the floor, and lit so it isn't a silhouette
+  'sunk-left':      { left:  '1%',   bottom: -300,   w: 720,  h: 1032, rot: 4,  lean: 'out', rim: 0.8, rimAngle: 285, rimSpread: 50, rimX: 8, rimY: 12, halo: 0.5, haloAt: '46% 44%' },
+  // brought in off the edge so the whole face reads, glow behind the head
+  'jamb-right':     { right: '3%',   bottom: 0,      w: 640,  h: 917,  rot: -6, lean: 'in', fitH: true, minW: 540, rim: 0.72, rimAngle: 270, rimSpread: 50, halo: 0.42, haloAt: '52% 46%' },
+  'face-close':     { right: '1%',   bottom: 0,      w: 600,  h: 860,  rot: -3, lean: 'in'  },
+  // hanging in from the top, upside down — dropped far enough that the face
+  // clears the edge; rim flipped with him so the light lands on it
+  'above':          { right: '6%',   top:    -400,   w: 680,  h: 974,  rot: 180, lean: null, anchor: 'center top', rim: 0.85, rimAngle: 75, rimSpread: 50, rimX: -8, rimY: 14, halo: 0.5, haloAt: '54% 24%' },
+  // standing in the open, whole and on the ground — not stranded at the frame edge
+  'far-small':      { right: '6%',   bottom: 0,      w: 620,  h: 888,  rot: -3, lean: 'in', fitH: true, minW: 520 },
+  // the detective: backlit but WHOLE — nothing of him leaves the frame
+  'edge-left':      { left:  '3%',   bottom: 0,      w: 600,  h: 860,  rot: 5,  lean: 'out', rim: 0.9, fitH: true, minW: 520 },
+  // the one full reveal: sized to clear a 900-tall viewport without clamping, and
+  // floored so a short window crops a few pixels rather than shrinking him to a runt
+  'full-centre':    { right: '5%',   bottom: 0,      w: 740,  h: 1061, rot: 0,  lean: 'in', fitH: true, minW: 600 },
+  // his own section: the largest he ever gets, but WHOLE — prominent, not overflowing
+  'huge-close':     { right: '2%',   bottom: 0,      w: 760,  h: 1089, rot: -3, lean: 'in', fitH: true, minW: 600 },
+  'lurk-right-low': { right: -70,    bottom: '-4%',  w: 700,  h: 1003, rot: 3,  lean: 'in'  },
+  'cropped-centre': { right: '9%',   bottom: '-12%', w: 640,  h: 917,  rot: 0,  lean: 'in'  },
+};
+
+class Component extends DCLogic {
+  componentDidMount() {
+    this._emotion = null;
+    this._pose = null;
+    this._hint = (scrolled) => {
+      const el = document.querySelector('[data-scrollhint]');
+      const hero = document.querySelector('section[data-emotion]');
+      if (!el || !hero) return;
+      const y = scrolled !== undefined ? scrolled : -hero.getBoundingClientRect().top;
+      const cramped = hero.offsetHeight > window.innerHeight - 40;
+      el.style.opacity = (y > 60 || cramped) ? '0' : '1';
+      const hdr = document.querySelector('header');
+      if (hdr) hdr.style.opacity = y > 180 ? '1' : '0';
+    };
+    window.addEventListener('scroll', this._hint, { passive: true });
+    window.addEventListener('resize', this._hint);
+    this._hint();
+    [120, 400, 1200].forEach((d) => setTimeout(this._hint, d));
+    this._boot();
+  }
+
+  componentDidUpdate() { if (this._sections) this._reapply(); }
+
+  componentWillUnmount() {
+    if (this._door) this._door.dispose();
+    if (this._rise) this._rise.disconnect();
+    cancelAnimationFrame(this._raf);
+    clearInterval(this._iv);
+    clearTimeout(this._ptrT);
+    window.removeEventListener('scroll', this._onScroll);
+    window.removeEventListener('scroll', this._hint);
+    window.removeEventListener('resize', this._hint);
+    window.removeEventListener('pointermove', this._onPointer);
+    window.removeEventListener('resize', this._onResize);
+  }
+
+  _boot() {
+    let n = 0;
+    this._iv = setInterval(() => {
+      const secs = document.querySelectorAll('section[data-emotion]');
+      if (secs.length >= 9) {
+        clearInterval(this._iv);
+        this._wire(Array.from(secs));
+        this._bootDoor();
+      } else if (++n > 90) clearInterval(this._iv);
+    }, 80);
+  }
+
+  async _bootDoor() {
+    try {
+      const mod = await import('./door.js');
+      const cv = document.querySelector('canvas[data-door]');
+      if (!cv) return;
+      this._door = mod.sceneDoor(cv);
+      if (this._onResize) this._onResize();
+      if (this._applyDoor) this._applyDoor(this._active);
+    } catch (e) {
+      console.warn('door.js unavailable — page runs without the WebGL layer', e);
+    }
+  }
+
+  _wire(sections) {
+    this._sections = sections;
+    let active = null;
+
+    const anchorOf = (sel) => {
+      const el = document.querySelector(sel);
+      if (!el) return 0.5;
+      const max = document.body.scrollHeight - window.innerHeight;
+      return max > 0 ? (el.offsetTop + el.offsetHeight / 2 - window.innerHeight / 2) / max : 0.5;
+    };
+    this._onResize = () => {
+      if (this._door) this._door.setAnchors(anchorOf('[data-gather-anchor]'), anchorOf('[data-knot-anchor]'));
+      const s = this._active;
+      if (s) this._stage(s.dataset.pose, s.dataset.emotion, parseFloat(s.dataset.open || '0.2'), true);
+    };
+    this._onResize();
+    window.addEventListener('resize', this._onResize);
+
+    this._applyDoor = (sec) => {
+      const door = this._door;
+      if (!door || !sec) return;
+      const d = sec.dataset;
+      const [c1, c2] = (d.light || '#8E5FA8,#C79BD8').split(',');
+      door.setLight(c1.trim(), (c2 || c1).trim());
+      door.setOpen(parseFloat(d.open || '0.2'));
+      door.setKnot(d.knot ? 1 : 0);
+      door.setPhase({
+        verified: parseFloat(d.pVerified || '0'),
+        live: parseFloat(d.pLive || '0'),
+        gather: parseFloat(d.pGather || '0'),
+        knotD: parseFloat(d.pKnot || '0'),
+      });
+    };
+
+    const activate = (sec) => {
+      if (sec === active) return;
+      active = sec;
+      this._active = sec;
+      this._applyDoor(sec);
+      this._stage(sec.dataset.pose, sec.dataset.emotion, parseFloat(sec.dataset.open || '0.2'), true);
+    };
+    this._activate = activate;
+
+    const settle = (sec) => {
+      if (sec.__risen) return;
+      sec.__risen = true;
+      const inner = sec.firstElementChild;
+      const kids = inner ? Array.from(inner.querySelectorAll(':scope > * > *, :scope > *')) : [];
+      kids.forEach((el) => { el.style.opacity = '1'; el.style.transform = 'translateY(0)'; });
+    };
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      sections.forEach((sec) => {
+        const inner = sec.firstElementChild;
+        const kids = inner ? Array.from(inner.querySelectorAll(':scope > * > *, :scope > *')) : [];
+        kids.forEach((el, i) => {
+          el.style.opacity = '0';
+          el.style.transform = 'translateY(22px)';
+          el.style.transition = 'opacity .38s ease ' + (i * 60) + 'ms, transform .44s cubic-bezier(.2,1,.3,1) ' + (i * 60) + 'ms';
+        });
+      });
+    }
+    this._rise = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) settle(e.target); }), { threshold: 0.1 });
+    sections.forEach((s) => this._rise.observe(s));
+
+    activate(sections[0]);
+    settle(sections[0]);
+
+    const first = sections[0], last = sections[sections.length - 1];
+    this._onScroll = () => {
+      const vh = window.innerHeight;
+      const fr = first.getBoundingClientRect(), lr = last.getBoundingClientRect();
+      const total = (lr.bottom - fr.top) - vh;
+      if (this._door) this._door.setScroll(total > 0 ? Math.min(1, Math.max(0, -fr.top / total)) : 0);
+      this._hint(-fr.top);
+      const mid = vh * 0.5;
+      let cur = sections[0], best = Infinity;
+      for (const s of sections) {
+        const r = s.getBoundingClientRect();
+        const d = Math.abs((r.top + r.bottom) / 2 - mid);
+        if (d < best) { best = d; cur = s; }
+      }
+      activate(cur);
+    };
+    // A throw inside the loop must never be able to kill it permanently.
+    const pump = () => {
+      try { this._onScroll(); } catch (e) { console.error('scroll tick', e); }
+      this._raf = requestAnimationFrame(pump);
+    };
+    this._raf = requestAnimationFrame(pump);
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+
+    this._onPointer = (e) => {
+      if (!this._door) return;
+      this._door.setPointer((e.clientX / window.innerWidth) * 2 - 1, -((e.clientY / window.innerHeight) * 2 - 1), 1);
+      clearTimeout(this._ptrT);
+      this._ptrT = setTimeout(() => { if (this._door) this._door.setPointer(0, 0, 0); }, 900);
+    };
+    window.addEventListener('pointermove', this._onPointer, { passive: true });
+
+    this._reapply();
+  }
+
+  _reapply() {
+    const s = this._active;
+    if (s) this._stage(s.dataset.pose, s.dataset.emotion, parseFloat(s.dataset.open || '0.2'), true);
+    this._scaleHeadlines();
+  }
+
+  _scaleHeadlines() {
+    const k = this.props.headlineScale ?? 1;
+    document.querySelectorAll('[data-h]').forEach((el) => {
+      if (!el.__base) el.__base = parseFloat(getComputedStyle(el).fontSize);
+      el.style.fontSize = (el.__base * k).toFixed(1) + 'px';
+    });
+  }
+
+  _faceUrl(name) {
+    if (!this._faces) {
+      this._faces = {};
+      document.querySelectorAll('[data-face]').forEach((el) => {
+        const u = getComputedStyle(el).maskImage;
+        if (u && u !== 'none') this._faces[el.dataset.face] = u;
+      });
+    }
+    return this._faces[name] || 'url(munshi/' + name + '.png)';
+  }
+
+  _face(name) {
+    if (!name || name === this._emotion) return;
+    this._emotion = name;
+    const url = this._faceUrl(name);
+    document.querySelectorAll('[data-mrim],[data-mbody]').forEach((el) => { el.style.maskImage = url; });
+  }
+
+  _stage(poseName, emotion, open, force) {
+    const el = document.querySelector('[data-munshi]');
+    if (!el) return;
+    let name = poseName || 'lurk-right';
+    const reveal = this.props.munshiReveal ?? 'knot';
+    if (name === 'full-centre' && reveal === 'never') name = 'cropped-centre';
+    if (!force && name === this._pose && emotion === this._emotion) return;
+    this._pose = name;
+    const p = POSES[name] || POSES['lurk-right'];
+
+    el.style.opacity = '0';
+    setTimeout(() => {
+      // Poses are authored against a 1440 frame and scaled from there, so the
+      // staging holds on a 13" laptop and on an ultrawide without re-authoring.
+      const k = Math.max(0.62, Math.min(1.3, window.innerWidth / 1440));
+      const px = (v) => (v === undefined ? 'auto' : typeof v === 'number' ? (v * k).toFixed(0) + 'px' : v);
+      el.style.left = px(p.left);
+      el.style.right = px(p.right);
+      el.style.top = px(p.top);
+      el.style.bottom = px(p.bottom);
+      let w = p.w * k, h = p.h * k;
+      if (p.fitH) {                       // keep the full reveal whole, but never tiny
+        const maxH = window.innerHeight - 70;
+        const floorW = (p.minW || 0) * k;
+        if (h > maxH) {
+          let s = maxH / h;
+          if (w * s < floorW) s = floorW / w;   // floor wins: crop rather than shrink
+          w *= s; h *= s;
+        }
+      }
+      el.style.width = w.toFixed(0) + 'px';
+      el.style.height = h.toFixed(0) + 'px';
+      const lean = p.lean === 'in' ? open * 16 : p.lean === 'out' ? -open * 18 : 0;
+      el.style.transform = 'rotate(' + p.rot + 'deg) translateX(' + lean.toFixed(1) + 'px)';
+      this._face(emotion);
+      // mask-size:contain letterboxes the artwork inside the box, so a box taller
+      // than the cat leaves a gap under his feet — that gap is what read as
+      // "floating". Anchoring the mask to the box's bottom edge sits him on it.
+      // ('above' is rotated 180deg, so its anchor must be the opposite edge.)
+      const anchor = p.anchor || 'center bottom';
+      el.querySelectorAll('[data-mrim],[data-mbody]').forEach((L) => { L.style.maskPosition = anchor; });
+      const rim = el.querySelector('[data-mrim]');
+      const lit = (this._active && this._active.dataset.light) || '#8E5FA8,#C79BD8';
+      const c = lit.split(',').map((s) => s.trim());
+      if (rim) {
+        rim.style.opacity = (p.rim !== undefined ? p.rim : 0.22 + 0.6 * open).toFixed(2);
+        // The edge light on him IS the door light — it must never be a different
+        // colour from the beam falling on the section. rimAngle lets a pose aim
+        // the glow at the head (it rotates with him, so 180deg poses must flip).
+        const ang = p.rimAngle !== undefined ? p.rimAngle : 255;
+        const stop = p.rimSpread !== undefined ? p.rimSpread : 44;
+        rim.style.background = 'linear-gradient(' + ang + 'deg,' + (c[1] || c[0]) + ',' + c[0] + ' ' + stop + '%,rgba(0,0,0,0) 73%)';
+        rim.style.transform = 'translate(' + (p.rimX !== undefined ? p.rimX : 14) + 'px,' + (p.rimY !== undefined ? p.rimY : -9) + 'px)';
+      }
+      // His fill NEVER changes — he is the same cat on every screen. Legibility
+      // comes from light BEHIND him, so he reads as a silhouette against a glow.
+      const halo = el.querySelector('[data-mhalo]');
+      if (halo) {
+        halo.style.opacity = (p.halo || 0).toFixed(2);
+        halo.style.background = 'radial-gradient(52% 40% at ' + (p.haloAt || '50% 40%') +
+          ',' + (c[1] || c[0]) + ' 0%,' + c[0] + ' 42%,rgba(0,0,0,0) 74%)';
+      }
+      requestAnimationFrame(() => { el.style.opacity = '1'; });
+    }, 90);
+  }
+
+  renderVals() {
+    return { noSubmit: (e) => e.preventDefault() };
+  }
+}
+</script>
+</body>
+</html>

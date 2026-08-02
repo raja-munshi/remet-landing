@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Remet — Verified strangers. Real places. Actually meet.</title>
+<meta name="description" content="Social discovery for people who would rather be somewhere. Verified underneath, pseudonymous on top. Starting in Indore.">
+<meta name="theme-color" content="#1A160F">
+<link rel="icon" href="brand/mark.png">
+<meta property="og:title" content="Remet — Verified strangers. Real places. Actually meet.">
+<meta property="og:description" content="Social discovery for people who would rather be somewhere. Starting in Indore.">
+<meta property="og:type" content="website">
+<style>
+html,body{margin:0;height:100%;background:#1A160F;color:#EDE7DC;
+font-family:'Hanken Grotesk',system-ui,-apple-system,sans-serif}
+.wrap{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:24px;text-align:center}
+a{color:#C79BD8}
+</style>
+<script>
+// Send each visitor to the layout built for their screen. Coarse pointer OR a
+// narrow viewport means the mobile page; everything else gets desktop.
+(function () {
+  var narrow = Math.min(window.innerWidth, window.screen ? window.screen.width : 9999) < 860;
+  var coarse = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+  var q = window.location.search || '';
+  var forced = /[?&]v=(mobile|desktop)/.exec(q);
+  var target = forced ? forced[1] : ((narrow || coarse) ? 'mobile' : 'desktop');
+  window.location.replace(target + '.dc.html' + window.location.hash);
+})();
+</script>
+</head>
+<body>
+<div class="wrap">
+<p>Remet</p>
+<p><a href="desktop.dc.html">Desktop version</a> &nbsp;·&nbsp; <a href="mobile.dc.html">Mobile version</a></p>
+</div>
+</body>
+</html>
