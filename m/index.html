@@ -13,6 +13,32 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://remet.me/">
 <meta name="twitter:card" content="summary_large_image">
+<script>
+// The canvas runtime lays this page out AFTER load, so the browser's own
+// jump-to-hash fires against a still-empty document and gives up at scrollY 0.
+// Re-assert the target for a short window, and stop the instant the visitor
+// scrolls for themselves so we never fight them.
+(function () {
+  function jump() {
+    var h = window.location.hash;
+    if (!h || h.length < 2) return;
+    var stop = false, n = 0;
+    function cancel() { stop = true; }
+    ['wheel', 'touchstart', 'keydown'].forEach(function (e) {
+      window.addEventListener(e, cancel, { once: true, passive: true });
+    });
+    (function again() {
+      if (stop || n++ > 14) return;
+      var el;
+      try { el = document.querySelector(h); } catch (err) { return; }
+      if (el) el.scrollIntoView();
+      setTimeout(again, 140);
+    })();
+  }
+  if (document.readyState === 'complete') jump();
+  else window.addEventListener('load', jump);
+})();
+</script>
 <script src="/support.js"></script>
 </head>
 <body>
