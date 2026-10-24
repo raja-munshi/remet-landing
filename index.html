@@ -660,10 +660,17 @@ class Component extends DCLogic {
     if (button) { button.disabled = false; button.textContent = label; button.style.opacity = '1'; }
     note.textContent = res.message;
     note.style.color = res.ok ? '#6FB392' : '#C98B8B';
-    if (res.ok) {
-      input.value = '';
-      if (consent) consent.checked = false;
-    }
+if (res.ok) {
+  // Send Lead event only after successful registration
+  if (typeof window.fbq === 'function') {
+    window.fbq('track', 'Lead', {
+      content_name: 'Remet Waitlist'
+    });
+  }
+
+  input.value = '';
+  if (consent) consent.checked = false;
+}
   }
 
   renderVals() {
